@@ -1,9 +1,15 @@
 import React from 'react';
 import '../css/sections.css'
-import Menu from '../components/Menu';
+import MenuList from '../components/MenuList';
+import logo from '../assets/dataguru-logo.png';
 const LeftSection = () => (
   <div className="leftSection">
-    <Menu/>
+    <div className="leftSectionLogoAreaMain">
+        <div className="logo">
+          <img src={logo} alt="Logo" className="img-responsive" />
+        </div>
+    </div>
+    <MenuList/>
   </div>
 );
 

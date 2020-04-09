@@ -1,10 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import '../css/sections.css'
 import ButtonTodo from '../components/ButtonTodo'
-const LeftSection = () => (
+
+const mapStateToProps = state => ({
+  
+
+});
+const RightSection = ({dispatch}) => (
   <div className="rightSection">
-    <ButtonTodo/>
+    <ButtonTodo onClick={() => dispatch({ type: 'TODO' })} />
   </div>
 );
 
-export default LeftSection;
+export default connect(mapStateToProps)(RightSection);
