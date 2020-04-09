@@ -1,6 +1,8 @@
 import React from 'react';
 import "./css/home.css"
-import Home from './layout/home'
+import Home from './layout/Home'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

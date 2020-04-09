@@ -1,17 +1,19 @@
 import React from 'react';
+
 import { connect } from 'react-redux';
 import "../css/home.css"
-import Header from '../components/header'
+import LeftSection from './LeftSection'
+import RightSection from './RightSection'
 
-
-const mapStateToProps = state => ({
+const mapStateToProps = () => ({
 
 });
 
-const Home = ({ }) => (
+const Home = ({ dispatch }) => (
 
     <div className="home">
-        <Header/> 
+        <LeftSection/>
+        <RightSection/>
     </div>
 );
 
