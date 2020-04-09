@@ -1,14 +1,14 @@
 import React from 'react';
 import "./css/home.css"
 import Home from './layout/Home'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter} from 'react-router-dom'
 
 
 function App() {
   return (
-    <React.Fragment>
+    <BrowserRouter>
       <Home/>
-    </React.Fragment>
+    </BrowserRouter>
       
    
   );
