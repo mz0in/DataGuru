@@ -1,8 +1,8 @@
 import React from 'react'
 import ButtonTodo from '../../components/ButtonTodo'
 import { connect } from 'react-redux';
-const Corona = () => (
-    <ButtonTodo onClick={() => dispatch({ type: 'TODO' })} />
+const Corona = ({dispatch}) => (
+    <ButtonTodo onClick={() => dispatch({ type: 'BITCOIN_GET' })} />
 )
 
-export default connect()
+export default connect()(Corona)

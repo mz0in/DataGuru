@@ -4,7 +4,7 @@ import '../css/sections.css'
 import ButtonTodo from '../components/ButtonTodo'
 import { Switch} from "react-router-dom";
 import RouteTemplate from '../components/RouteTemplate'
-import Corona from './pages/Corona'
+import Bitcoin from './pages/Bitcoin'
 const mapStateToProps = state => ({
 
 
@@ -18,7 +18,7 @@ const RightSection = ({ dispatch }) => (
       Hello
     </RouteTemplate>
     <RouteTemplate path="/">
-      <Corona/>    
+      <Bitcoin/>    
     </RouteTemplate>
     
   </Switch>

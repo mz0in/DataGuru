@@ -8,10 +8,6 @@ function todoSagaLog(action) {
   }
 }
 
-function* todoSaga() {
 
-
-  yield takeEvery("TODO", todoSagaLog);
-}
-
-export default todoSaga;
+export  const  todosaga =
+  [takeEvery("TODO", todoSagaLog)]

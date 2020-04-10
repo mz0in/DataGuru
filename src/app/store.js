@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 
 import reducers from '../reducers';
-import todosaga from '../sagas/todosaga';
+import sagas from '../sagas'
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -24,6 +24,6 @@ export const store = createStore(reducers, enhancer );
 // FIXME: load sagas based on router context
 //[].map(saga => sagaMiddleware.run(saga));
 
-sagaMiddleware.run(todosaga);
+sagaMiddleware.run(sagas);
 
 export default store;
