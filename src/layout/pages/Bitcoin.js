@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Loader from "../../components/Loader"
-
+import BitcoinList from '../../components/BitcoinList'
+import "../../css/bitcoin.css"
 // FIXME: maybe, do something about this ?
 
 const generateColumn = ({ bitcoinPrice, bitcoinStatus, value }) => {
@@ -46,9 +47,12 @@ export class Bitcoin extends React.Component {
         const { bitcoin } = this.props;
         if (bitcoin.status === "SUCCESS") {
             return (
-                <div>
-                    SUCCESS
+                <div className="BitcoinList">
+                    <BitcoinList value={bitcoin.data["USD"]}/>
+                    <BitcoinList value={bitcoin.data["EUR"]}/>
+                    <BitcoinList value={bitcoin.data["GBP"]}/>
                 </div>
+                
             )
         }
         if (bitcoin.status === "PENDING"){
