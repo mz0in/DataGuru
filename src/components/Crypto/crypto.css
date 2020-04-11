@@ -84,11 +84,15 @@
 }
 
 .CryptoPercentageChange {
+    height: 100%;
     width: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-size: 15px;
     overflow: hidden;
+    padding-right: 15px;
+    border-right: 2px solid white;
 }
 
 .red {
