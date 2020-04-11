@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Loader from "../../components/Loader"
-import BitcoinList from '../../components/BitcoinList'
-import "../../css/bitcoin.css"
+import CryptoList from '../../components/Crypto/CryptoList'
+import "../../components/Crypto/crypto.css"
 // FIXME: maybe, do something about this ?
 
 const generateColumn = ({ bitcoinPrice, bitcoinStatus, value }) => {
@@ -26,7 +26,7 @@ const generateColumn = ({ bitcoinPrice, bitcoinStatus, value }) => {
 
 }
 
-export class Bitcoin extends React.Component {
+export class Crypto extends React.Component {
 
 
 
@@ -47,10 +47,12 @@ export class Bitcoin extends React.Component {
         const { bitcoin } = this.props;
         if (bitcoin.status === "SUCCESS") {
             return (
-                <div className="BitcoinList">
-                    <BitcoinList value={bitcoin.data["USD"]}/>
-                    <BitcoinList value={bitcoin.data["EUR"]}/>
-                    <BitcoinList value={bitcoin.data["GBP"]}/>
+                <div className="CryptoList">
+                    <div className="CryptoHeader"> Cryptocurrencies Prices & Variations</div>
+                    {bitcoin.data.map((value) => (
+                        <CryptoList value={value}/>
+                    ))}
+                    
                 </div>
                 
             )
@@ -77,4 +79,4 @@ function mapStateToProps(state) {
     return { bitcoin: state.bitcoin };
 }
 
-export default connect(mapStateToProps)(Bitcoin);
+export default connect(mapStateToProps)(Crypto);

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import '../css/sections.css'
 import { Switch} from "react-router-dom";
 import RouteTemplate from '../components/RouteTemplate'
-import Bitcoin from './pages/Bitcoin'
+import Bitcoin from './pages/Crypto'
 const mapStateToProps = state => ({
 
 
