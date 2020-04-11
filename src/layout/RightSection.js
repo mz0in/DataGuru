@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import '../css/sections.css'
-import ButtonTodo from '../components/ButtonTodo'
 import { Switch} from "react-router-dom";
 import RouteTemplate from '../components/RouteTemplate'
 import Bitcoin from './pages/Bitcoin'
@@ -20,7 +19,7 @@ const RightSection = ({ dispatch }) => (
     <RouteTemplate path="/">
       <Bitcoin/>    
     </RouteTemplate>
-    
+  
   </Switch>
 
 
