@@ -17,6 +17,16 @@
     font-weight: 600;
 }
 
+.CryptoRank {
+    width: 5%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
 .CryptoHead {
     width: 20%;
 }
@@ -31,6 +41,10 @@
     display: flex;
     flex-direction: row;
     border-radius: 10px;
+}
+
+.CryptoElement:hover {
+    background-color: #565656;
 }
 
 .CryptoSymbol {
