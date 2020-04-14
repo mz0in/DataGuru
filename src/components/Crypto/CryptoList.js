@@ -23,7 +23,6 @@ const price_color = (value) => {
                 <div className="row" >
                     7d: <div className={value["price_change_percentage_7d_in_currency"] > 0 ? "green" : "red"}> {value["price_change_percentage_7d_in_currency"].toFixed(2)}% </div>
                 </div>
-
             </div>
         </div>
 
@@ -48,7 +47,8 @@ const CryptoList = ({ value }) => (
         {/* Generates the Price with the right color */}
         {price_color(value)}
         <div className="CryptoSupply">
-
+            <p>Circulating Supply: {value["circulating_supply"]}</p>
+            <p>Total Supply: {value["total_supply"] !== null ? value["total_supply"] : "No Maximum"}</p>
         </div>
 
     </div>

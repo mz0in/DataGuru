@@ -109,6 +109,18 @@
     border-right: 2px solid white;
 }
 
+.CryptoSupply {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.CryptoSupply p {
+    font-weight: 600;
+    flex: 10%
+}
+
 .red {
     display: flex;
     margin-left: auto;
@@ -127,43 +139,3 @@
 .row {
     display: flex;
 }
-
-
-/* .HighLow24h {
-    display: flex;
-    width: 12%;
-    flex-direction: column;
-    padding-right: 5px;
-    border-right: 2px solid white;
-}
-
-.HighLow24hTitle {
-    flex: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    margin-top: -10px;
-}
-
-.HighLow24h .High24h {
-    flex: 40%;
-    display: flex;
-    padding: 5px;
-    align-items: center;
-}
-
-.High24h img {
-    width: 20px;
-}
-
-.Low24h img {
-    width: 20px;
-}
-
-.HighLow24h .Low24h {
-    flex: 40%;
-    display: flex;
-    padding: 5px;
-    align-items: center;
-} */
