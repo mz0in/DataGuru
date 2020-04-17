@@ -1,6 +1,6 @@
 {
     "homepage": "http://stangirard.github.io/DataGuru",
-    "name": "react-saga",
+    "name": "DataGuru",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
